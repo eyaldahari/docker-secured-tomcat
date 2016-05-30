@@ -29,7 +29,7 @@ It adds security hardening to Apache Tomcat according to [OWASP](https://www.owa
 
 - By default the command that run Tomcat Server is:
 
-  ```catalina.sh run```
+  ```$ catalina.sh run```
 
 ## Follw me on
 [twitter](https://twitter.com/EyalDahari) | [linkedin](https://www.linkedin.com/in/eyaldahari) | [blog](https://medium.com/@eyaldahari)
