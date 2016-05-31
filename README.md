@@ -5,31 +5,43 @@ This image extends the original [Docker](https://docs.docker.com/docker-hub/offi
 
 It adds security hardening to Apache Tomcat according to [OWASP](https://www.owasp.org/index.php/Securing_tomcat) 
 
-## How to use this Docker image and run it
+## How to use and run this Docker image
 
 - Make sure you have [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/) installed
 
-- Download/Clone this repository files to a directory (ex. /home/ubuntu/docker_tomcat)
+## There are two options to take in order to use the image
+1. Docker pull the image by running:
 
-- Run the following command:
-
-  ```$ docker build /home/ubuntu/docker_tomcat```
-
-- Run the following commaind in order to get the new image id
-
-  ```$ docker images```
-
-- Assuming image id is: ```dd6a9057831e```. In order to run the Apache Tomcat hardened container run:
+  ```$ docker pull eyaldahari/hardenedtomcat```
   
-  ```$ docker run -it --rm -p 8888:8080 dd6a9057831e```
+  Then run:
+  
+  ```$ docker run -it --rm -p 8888:8080 eyaldahari/hardenedtomcat```
 
-  The command above will run the Hardened Tomcat server and will listen on port 8888
-  Once the container finishes exits it will be removed automatically by Docker 
-  You may connect to to the container from your browser at the following URL: ```http://docker-host-ip:8888```
+2. Build the image yourself:
 
-- By default the command that run Tomcat Server is:
+ - Download/Clone this repository files to a directory (ex. /home/ubuntu/docker_tomcat)
 
-  ```$ catalina.sh run```
+ - Run the following command:
+
+   ```$ docker build /home/ubuntu/docker_tomcat```
+
+ - Run the following command in order to get the new image id
+
+   ```$ docker images```
+
+ - Assuming image id is: ```dd6a9057831e```. In order to run the Apache Tomcat hardened container run:
+  
+   ```$ docker run -it --rm -p 8888:8080 dd6a9057831e```
+
+ - By default the command that run Tomcat Server is:
+
+   ```$ catalina.sh run```
+
+After completing the steps above, a Hardened Tomcat server will be up listenning on port 8888.
+In order to connect to the server, open a browser at the following URL: ```http://docker-host-ip:8888```
+Once the container exits it will be removed automatically by Docker.
+  
 
 ## Follw me on
 [twitter](https://twitter.com/EyalDahari) | [linkedin](https://www.linkedin.com/in/eyaldahari) | [blog](https://medium.com/@eyaldahari)
