@@ -1,7 +1,7 @@
 # Docker Secured Apache Tomcat
 Docker Image packaging for A hardened [Apache Tomcat](https://tomcat.apache.org)
 
-This repository extends the original [Docker](https://docs.docker.com/docker-hub/official_repos/) official image for [tomcat](https://registry.hub.docker.com/_/tomcat/). See [the Docker Hub page](https://registry.hub.docker.com/_/tomcat/).
+This image extends the original [Docker](https://docs.docker.com/docker-hub/official_repos/) official image for [Apache  Tomcat](https://registry.hub.docker.com/_/tomcat/)  (tomcat:jre8)
 
 It adds security hardening to Apache Tomcat according to [OWASP](https://www.owasp.org/index.php/Securing_tomcat) 
 
