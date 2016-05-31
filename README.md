@@ -9,7 +9,7 @@ It adds security hardening to Apache Tomcat according to [OWASP](https://www.owa
 
 - Make sure you have [Docker](https://docs.docker.com/engine/installation/linux/ubuntulinux/) installed
 
-- Download/Clone this repository files to a direcotry (ex. /home/ubuntu/docker_tomcat)
+- Download/Clone this repository files to a directory (ex. /home/ubuntu/docker_tomcat)
 
 - Run the following command:
 
